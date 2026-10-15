@@ -1,0 +1,17 @@
+[package]
+name = "atrac-cleanroom"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Specification-driven streaming ATRAC3 codec"
+
+[lib]
+crate-type = ["rlib", "cdylib"]
+
+[profile.release]
+overflow-checks = true
+
+[dependencies]
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+wasm-bindgen = "=0.2.129"

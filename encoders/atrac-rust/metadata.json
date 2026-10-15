@@ -1,0 +1,8 @@
+{
+  "encoderId": "atrac-rust",
+  "userFriendlyName": "ATRAC3 Rust",
+  "description": "Streaming ATRAC3 LP2, LP4 and 105 kbps encoder with continuous gapless batch state.",
+  "version": "0.1.0",
+  "encoderDependencies": [],
+  "apiVersion": "1"
+}
