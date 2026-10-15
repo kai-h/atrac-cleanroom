@@ -20,14 +20,15 @@ channel. A sample is one time point: stereo has two interleaved elements.
 
 ## Current status
 
-Native macOS and WebAssembly tests pass all 24 supplied LP2/LP4 golden payloads.
+Native macOS, Windows, Linux and WebAssembly tests pass all 24 supplied LP2/LP4 golden payloads.
 The browser harness passes streaming and plugin tests for all three bitrates.
 A three-track LP2 upload through Web MiniDisc Pro to MockMD completed successfully
 on 2026-10-15, after fixing sequential cleanup of the host's ffmpeg files.
 
 Physical-device testing is deferred: gapless playback, LP4 odd-frame padding and
-MZ-RH1 rip comparisons remain unverified. Windows/Linux CI is configured but has
-not yet been run here. Independent 105 kbps golden vectors are still needed.
+MZ-RH1 rip comparisons remain unverified. Native macOS, Windows and Linux
+conformance has passed in GitHub Actions. Independent 105 kbps golden vectors
+are still needed.
 See [validation](docs/validation.md) for the full limits and outstanding checks.
 
 ## Build and test

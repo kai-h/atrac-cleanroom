@@ -28,9 +28,13 @@ now sequential. The browser regression harness checks for overlapping cleanup
 requests; all three modes pass after the fix. The corrected WME was installed
 before the successful host retry.
 
-CI definitions cover native macOS, Windows and Linux plus WASM. Windows and Linux
-execution has not occurred in this workspace. Passing common fixtures on macOS
-and WASM is evidence of reproducibility, not exhaustive cross-platform proof.
+Native debug and release conformance passed on macOS, Windows and Linux in
+GitHub Actions on 2026-10-15. Release builds additionally test the target-specific
+CLI against golden LP2/LP4 payloads before packaging. Passing common fixtures is
+evidence of reproducibility, not exhaustive cross-platform proof.
+
+Public repository: https://github.com/kai-h/atrac-cleanroom
+Release build workflow: .github/workflows/release.yml
 
 Outstanding acceptance and specification limits:
 

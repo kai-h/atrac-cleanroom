@@ -1,6 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-const names = ['metadata.json', 'index.js', 'worker.js', 'api.js', 'atrac_cleanroom.js', 'atrac_cleanroom_bg.wasm'];
+const names = ['metadata.json', 'LICENSE', 'index.js', 'worker.js', 'api.js', 'atrac_cleanroom.js', 'atrac_cleanroom_bg.wasm'];
 const u16 = n => { if (n > 65535) throw new Error('Field too long'); const b=Buffer.alloc(2); b.writeUInt16BE(n); return b; };
 const u32 = n => { const b=Buffer.alloc(4); b.writeUInt32BE(n); return b; };
 const magic = Buffer.from('Web MiniDisc Dynamic Encoder');
